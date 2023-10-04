@@ -1,0 +1,30 @@
+/* Grid
+=================================== */
+@use 'sass:math';
+$columns: 12;
+$grid-width: 940px;
+
+.container {
+	width: 100%;
+	max-width: $grid-width;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.row {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: -10px;
+	margin-right: -10px;
+}
+
+@for $i from 1 to $columns + 1 {
+	.col-#{$i} {
+		width: math.div($i, $columns) * 100%;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+}

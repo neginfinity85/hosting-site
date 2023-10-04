@@ -1,0 +1,17 @@
+.btn {
+	font-family: $font-PTSans;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 1;
+	color: $color-primary;
+	text-transform: uppercase;
+
+	cursor: pointer;
+	background-color: transparent;
+	border: 0;
+}
+
+.btn__login {
+	padding: 15px 30px;
+	border: 1px solid $color-secondary;
+}
