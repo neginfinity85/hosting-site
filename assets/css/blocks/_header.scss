@@ -3,5 +3,12 @@
 	height: 100px;
 
 	color: #fff;
-	background: #000;
+
+	background: transparent;
+	border-bottom: 1px solid rgba($color-primary, 0.1);
+
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1;
 }

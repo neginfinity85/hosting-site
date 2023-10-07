@@ -17,7 +17,13 @@
 	text-transform: uppercase;
 	text-decoration: none;
 
+	transition: color 0.2s linear;
+
 	&:last-child {
 		margin-right: 0;
+	}
+
+	&:hover {
+		color: $color-secondary;
 	}
 }

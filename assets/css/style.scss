@@ -1,5 +1,7 @@
 @import 'vars';
 
+/* Common rules
+================================ */
 body {
 	margin: 0;
 
@@ -30,10 +32,17 @@ h6 {
 *::before {
 	box-sizing: border-box;
 }
-
+/* Helpers
+=========================== */
+@import '_helpers';
+/* Grid
+=========================== */
 @import 'blocks/grid';
+/* Blocks
+========================== */
 @import 'blocks/header';
 @import 'blocks/logo';
 @import 'blocks/nav';
 @import 'blocks/login';
 @import 'blocks/btn';
+@import 'blocks/intro';

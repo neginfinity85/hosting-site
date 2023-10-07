@@ -1,3 +1,5 @@
+/* Buttons
+============================== */
 .btn {
 	font-family: $font-PTSans;
 	font-size: 12px;
@@ -9,9 +11,33 @@
 	cursor: pointer;
 	background-color: transparent;
 	border: 0;
+
+	transition: color 0.2s linear, background 0.2s linear;
 }
 
 .btn__login {
 	padding: 15px 30px;
 	border: 1px solid $color-secondary;
+
+	&:hover {
+		color: $color-secondary;
+		background: $color-primary;
+	}
+}
+
+.btn__intro {
+	display: block;
+	margin: 0 auto;
+	padding: 18px 69px;
+
+	font-size: 14px;
+	font-weight: 700;
+	text-transform: uppercase;
+
+	background-color: $color-secondary;
+
+	&:hover {
+		color: $color-secondary;
+		background-color: $color-primary;
+	}
 }
