@@ -1,0 +1,41 @@
+/* Form
+========================== */
+.form {
+	display: flex;
+	justify-content: center;
+}
+
+.form__group {
+	height: 70px;
+	padding: 10px;
+	display: flex;
+	align-items: center;
+
+	background: #000 url('../images/form-bg.jpg') no-repeat center / cover;
+}
+
+.input {
+	height: 50px;
+	width: 400px;
+	margin: 0;
+	padding: 0;
+
+	font-family: $font-PTSans;
+	font-size: 16px;
+	font-weight: 400;
+
+	border: 0;
+	outline: 0;
+}
+.select {
+	height: 50px;
+	width: 80px;
+	padding: 0;
+
+	font-family: $font-PTSans;
+	font-size: 16px;
+	font-weight: 400;
+
+	border: 0;
+	outline: 0;
+}

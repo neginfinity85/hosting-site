@@ -51,4 +51,10 @@
 	color: $color-secondary;
 	text-align: center;
 	text-transform: uppercase;
+
+	transition: color 0.2s linear;
+
+	&:hover {
+		color: $color-primary;
+	}
 }

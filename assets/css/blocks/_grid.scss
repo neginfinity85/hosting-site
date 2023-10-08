@@ -15,10 +15,16 @@
 	height: 100%;
 	display: flex;
 	flex-wrap: wrap;
-	align-items: center;
-	justify-content: space-between;
 	margin-left: -10px;
 	margin-right: -10px;
+}
+
+.align-items-start {
+	align-items: flex-start !important;
+}
+
+.align-items-center {
+	align-items: center !important;
 }
 
 @for $i from 1 to $columns + 1 {
@@ -26,5 +32,45 @@
 		width: math.div($i, $columns) * 100%;
 		padding-left: 10px;
 		padding-right: 10px;
+	}
+}
+
+@media screen and (max-width: 992px) {
+	@for $i from 1 to $columns + 1 {
+		.col-lg-#{$i} {
+			width: math.div($i, $columns) * 100%;
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	@for $i from 1 to $columns + 1 {
+		.col-md-#{$i} {
+			width: math.div($i, $columns) * 100%;
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+	}
+}
+
+@media screen and (max-width: 576px) {
+	@for $i from 1 to $columns + 1 {
+		.col-sm-#{$i} {
+			width: math.div($i, $columns) * 100%;
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+	}
+}
+
+@media screen and (max-width: 400px) {
+	@for $i from 1 to $columns + 1 {
+		.col-xs-#{$i} {
+			width: math.div($i, $columns) * 100%;
+			padding-left: 10px;
+			padding-right: 10px;
+		}
 	}
 }
