@@ -12,12 +12,7 @@
 .domains__title {
 	margin-bottom: 30px;
 
-	font-family: $font-Roboto;
-	font-size: 40px;
-	font-weight: 300;
-	line-height: 0.5;
-	text-align: center;
-	text-transform: capitalize;
+	@include sectionTitle;
 }
 
 .domains__text {

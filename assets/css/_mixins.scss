@@ -1,0 +1,9 @@
+@mixin sectionTitle {
+	font-family: $font-Roboto;
+	font-size: 40px;
+	font-weight: 300;
+	line-height: 1;
+	color: #000;
+	text-align: center;
+	text-transform: capitalize;
+}

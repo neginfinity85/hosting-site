@@ -8,12 +8,7 @@
 	margin-top: 80px;
 	margin-bottom: 20px;
 
-	font-family: $font-Roboto;
-	font-size: 40px;
-	font-weight: 300;
-	line-height: 1;
-	color: #000;
-	text-align: center;
+	@include sectionTitle;
 }
 .plan__text {
 	margin-bottom: 40px;

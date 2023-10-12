@@ -1,4 +1,5 @@
 @import 'vars';
+@import 'mixins';
 
 /* Common rules
 ================================ */
@@ -53,3 +54,5 @@ h6 {
 @import 'blocks/plan';
 @import 'blocks/plan-item';
 @import 'blocks/testimonials';
+@import 'blocks/blog';
+@import 'blocks/article';
