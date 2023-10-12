@@ -1,0 +1,37 @@
+.plan {
+	width: 100%;
+
+	background-color: $color-primary;
+}
+
+.plan__title {
+	margin-top: 80px;
+	margin-bottom: 20px;
+
+	font-family: $font-Roboto;
+	font-size: 40px;
+	font-weight: 300;
+	line-height: 1;
+	color: #000;
+	text-align: center;
+}
+.plan__text {
+	margin-bottom: 40px;
+
+	font-family: $font-PTSans;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.25;
+	color: #000;
+	text-align: center;
+}
+
+.plan__link {
+	color: #e74c3c;
+
+	transition: color 0.2s linear;
+
+	&:hover {
+		color: darken(#e74c3c, 20%);
+	}
+}

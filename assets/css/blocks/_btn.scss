@@ -55,3 +55,28 @@
 		background-color: darken($color-secondary, 10%);
 	}
 }
+
+.btn--plan-item {
+	width: 80%;
+	padding: 18px 20px;
+	margin-bottom: 15px;
+	margin-top: 20px;
+
+	font-size: 14px;
+	font-weight: 700;
+
+	background-color: #2c3039;
+
+	&:hover {
+		background-color: $color-secondary;
+	}
+}
+
+.btn--red {
+	background-color: $color-secondary;
+
+	&:hover {
+		color: $color-secondary;
+		background-color: $color-primary;
+	}
+}

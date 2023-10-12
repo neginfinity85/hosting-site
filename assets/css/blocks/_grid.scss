@@ -27,6 +27,10 @@
 	align-items: center !important;
 }
 
+.justify-content-center {
+	justify-content: center;
+}
+
 @for $i from 1 to $columns + 1 {
 	.col-#{$i} {
 		width: math.div($i, $columns) * 100%;
