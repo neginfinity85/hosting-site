@@ -9,3 +9,12 @@
 .border-0 {
 	border: none !important;
 }
+
+.blur-effect {
+	opacity: 0.3;
+	transition: opacity 0.3s linear;
+
+	&:hover {
+		opacity: 1;
+	}
+}

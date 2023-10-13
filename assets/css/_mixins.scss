@@ -7,3 +7,11 @@
 	text-align: center;
 	text-transform: capitalize;
 }
+
+@mixin PTSans($fontSize, $fontWeight, $lineHeight, $fontColor) {
+	font-family: $font-PTSans;
+	font-size: $fontSize;
+	font-weight: $fontWeight;
+	line-height: $lineHeight;
+	color: $fontColor;
+}
