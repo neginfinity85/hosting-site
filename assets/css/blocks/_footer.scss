@@ -1,0 +1,47 @@
+.footer {
+	width: 100%;
+	padding: 25px 0 20px;
+
+	background-color: $color-primary;
+}
+
+.footer__title {
+	@include PTSans(12px, 700, 2.5, #000);
+	text-transform: uppercase;
+}
+.footer__link {
+	display: block;
+
+	@include PTSans(12px, 400, 2.5, #5e5e5e);
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+.footer__tel {
+	display: block;
+	margin-bottom: 5px;
+
+	@include PTSans(18px, 700, 1.1, $color-third);
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+.footer__email {
+	display: inline-block;
+	margin-bottom: 20px;
+
+	@include PTSans(14px, 400, 1.4, $color-secondary);
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+.footer__copyright {
+	@include PTSans(12px, 400, 1.7, $color-third);
+}

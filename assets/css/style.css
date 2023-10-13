@@ -1194,4 +1194,68 @@ h6 {
 }
 .subscribe__social-img:hover {
   opacity: 1;
+}
+
+.footer {
+  width: 100%;
+  padding: 25px 0 20px;
+  background-color: #fff;
+}
+
+.footer__title {
+  font-family: "PT Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 2.5;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.footer__link {
+  display: block;
+  font-family: "PT Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 2.5;
+  color: #5e5e5e;
+  text-decoration: none;
+}
+.footer__link:hover {
+  text-decoration: underline;
+}
+
+.footer__tel {
+  display: block;
+  margin-bottom: 5px;
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.1;
+  color: #2c3039;
+  text-decoration: none;
+}
+.footer__tel:hover {
+  text-decoration: underline;
+}
+
+.footer__email {
+  display: inline-block;
+  margin-bottom: 20px;
+  font-family: "PT Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #e84c3d;
+  text-decoration: none;
+}
+.footer__email:hover {
+  text-decoration: underline;
+}
+
+.footer__copyright {
+  font-family: "PT Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #2c3039;
 }/*# sourceMappingURL=style.css.map */
