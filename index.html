@@ -16,24 +16,24 @@
 <body>
 
     <!-- Header -->
-    <header class="header">
+    <header class="header" id="header">
         <div class="container">
             <div class="row">
 
                 <div class="col-4">
-                    <div class="logo">
+                    <a class="logo" href="#" data-scroll="#intro">
                         <img class="logo__img" src="assets/images/logo.svg" alt="">
                         <div class="logo__text">Nine Cloud <span>Hosting</span></div>
-                    </div>
+                    </a>
                 </div>
 
                 <div class="col-6">
                     <nav class="nav">
-                        <a class="nav__link" href="#">hosting</a>
-                        <a class="nav__link" href="#">domanins</a>
-                        <a class="nav__link" href="#">features</a>
-                        <a class="nav__link" href="#">testimonials</a>
-                        <a class="nav__link" href="#">contacts</a>
+                        <a class="nav__link" href="#" data-scroll="#hosting">hosting</a>
+                        <a class="nav__link" href="#" data-scroll="#domains">domanins</a>
+                        <a class="nav__link" href="#" data-scroll="#features">features</a>
+                        <a class="nav__link" href="#" data-scroll="#testimonials">testimonials</a>
+                        <a class="nav__link" href="#" data-scroll="#contacts">contacts</a>
                     </nav>
                 </div>
 
@@ -48,7 +48,7 @@
     </header>
 
     <!-- Intro -->
-    <section class="intro">
+    <section class="intro" id="intro">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-12">
@@ -63,7 +63,7 @@
     </section>
 
     <!-- Hosting-main-features -->
-    <section class="hosting-main-features">
+    <section class="hosting-main-features" id="hosting">
         <div class="container">
             <div class="row">
                 <div class="col-4">
@@ -99,7 +99,7 @@
     </section>
 
     <!-- Domains -->
-    <section class="domains">
+    <section class="domains" id="domains">
         <div class="container">
 
             <div class="row align-items-start">
@@ -165,7 +165,7 @@
     </section>
 
     <!-- Features -->
-    <section class="features">
+    <section class="features" id="features">
         <div class="container">
             <div class="row">
 
@@ -322,7 +322,7 @@
     </section>
 
     <!-- Testimonials -->
-    <section class="testimonials">
+    <section class="testimonials" id="testimonials">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -441,7 +441,7 @@
     </section>
 
     <!-- Contacts -->
-    <section class="contacts">
+    <section class="contacts" id="contacts">
 
         <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.437396581306!2d-74.00977602426951!3d40.708386737837166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a17e44ef3f7%3A0xfcbdd8c795c39fb8!2zMTAwIFdpbGxpYW0gU3QsIE5ldyBZb3JrLCBOWSAxMDAzOCwg0KHQqNCQ!5e0!3m2!1sru!2ssk!4v1697206233360!5m2!1sru!2ssk"
@@ -545,6 +545,9 @@
             </div><!-- /.row -->
         </div><!-- /.container -->
     </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="assets/js/app.js"></script>
 
 </body>
 
