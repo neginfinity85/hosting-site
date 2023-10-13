@@ -497,7 +497,6 @@ h6 {
   cursor: pointer;
   background-color: transparent;
   border: 0;
-  border-radius: 5px;
   transition: color 0.2s linear, background 0.2s linear;
 }
 
@@ -567,6 +566,19 @@ h6 {
 }
 .btn--blog:hover {
   background-color: #e84c3d;
+}
+
+.btn--subscribe {
+  width: 80px;
+  height: 40px;
+  padding: 12px 20px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: #e84c3d;
+}
+.btn--subscribe:hover {
+  background-color: #d82a1a;
 }
 
 /* Intro
@@ -734,12 +746,25 @@ h6 {
   margin-bottom: 40px;
 }
 
+.form--subscribe {
+  margin-bottom: 0;
+  padding: 10px 0;
+  align-items: center;
+  justify-content: flex-end;
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+}
+
 .form__group {
   height: 70px;
   padding: 10px;
   display: flex;
   align-items: center;
   background: #000 url("../images/form-bg.jpg") no-repeat center/cover;
+}
+
+.form__group--subscribe {
+  height: 40px;
+  background: none;
 }
 
 .input {
@@ -752,6 +777,13 @@ h6 {
   font-weight: 400;
   border: 0;
   outline: 0;
+}
+
+.input--subscribe {
+  height: 40px;
+  width: 295px;
+  font-size: 14px;
+  color: #2c3039;
 }
 
 .select {
@@ -1074,7 +1106,7 @@ h6 {
 }
 
 .contacts__inner {
-  max-width: 440px;
+  max-width: 450px;
   padding: 10px;
   border-radius: 20px;
   background-color: rgba(255, 255, 255, 0.8);
@@ -1135,4 +1167,31 @@ h6 {
 }
 .contacts__mail:hover {
   text-decoration: underline;
+}
+
+.subscribe {
+  width: 100%;
+  background-color: #2c3039;
+}
+
+.subscribe__text {
+  font-family: "PT Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.subscribe__social-link {
+  margin-right: 28px;
+  text-decoration: none;
+}
+
+.subscribe__social-img {
+  opacity: 0.2;
+  transition: opacity 0.2s linear;
+}
+.subscribe__social-img:hover {
+  opacity: 1;
 }/*# sourceMappingURL=style.css.map */

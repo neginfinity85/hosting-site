@@ -6,6 +6,16 @@
 	margin-bottom: 40px;
 }
 
+.form--subscribe {
+	margin-bottom: 0;
+	padding: 10px 0;
+
+	align-items: center;
+	justify-content: flex-end;
+
+	border-left: 1px solid rgba(#fff, 10%);
+}
+
 .form__group {
 	height: 70px;
 	padding: 10px;
@@ -13,6 +23,11 @@
 	align-items: center;
 
 	background: #000 url('../images/form-bg.jpg') no-repeat center / cover;
+}
+
+.form__group--subscribe {
+	height: 40px;
+	background: none;
 }
 
 .input {
@@ -28,6 +43,15 @@
 	border: 0;
 	outline: 0;
 }
+
+.input--subscribe {
+	height: 40px;
+	width: 295px;
+
+	font-size: 14px;
+	color: $color-third;
+}
+
 .select {
 	height: 50px;
 	width: 80px;

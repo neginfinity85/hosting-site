@@ -1,0 +1,25 @@
+.subscribe {
+	width: 100%;
+
+	background-color: $color-third;
+}
+
+.subscribe__text {
+	@include PTSans(12px, 400, 1.7, $color-primary);
+	text-transform: uppercase;
+}
+
+.subscribe__social-link {
+	margin-right: 28px;
+
+	text-decoration: none;
+}
+
+.subscribe__social-img {
+	opacity: 0.2;
+	transition: opacity 0.2s linear;
+
+	&:hover {
+		opacity: 1;
+	}
+}
