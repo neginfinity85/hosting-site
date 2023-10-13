@@ -33,6 +33,9 @@ h6 {
 *::before {
 	box-sizing: border-box;
 }
+/* Vendors
+============================ */
+@import 'vendor/slick';
 /* Helpers
 =========================== */
 @import '_helpers';

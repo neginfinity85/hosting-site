@@ -35,9 +35,21 @@ $(function () {
 
 		$('html, body').animate(
 			{
-				scrollTop: elementOffset - 100,
+				scrollTop: elementOffset - 99,
 			},
 			700,
 		);
+	});
+
+	/* Testimonials Slider https://kenwheeler.github.io/slick/?ref=blogduwebdesign.com */
+	let slider = $('#testimonialsSlider');
+
+	slider.slick({
+		infinite: true,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		fade: true,
+		arrows: false,
+		dots: true,
 	});
 });
