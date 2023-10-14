@@ -733,6 +733,11 @@ h6 {
   display: block;
 }
 
+.intro__slider-photo {
+  height: 100%;
+  max-height: 583px;
+}
+
 .intro__inner {
   position: relative;
   z-index: 2;
@@ -814,6 +819,10 @@ h6 {
   line-height: 1.25;
   color: #6f798c;
   text-align: center;
+}
+
+.hosting-main-features__img {
+  height: 49px;
 }
 
 .hosting-main-features__read-more {
@@ -939,6 +948,7 @@ h6 {
   font-family: "PT Sans", sans-serif;
   font-size: 16px;
   font-weight: 400;
+  background-color: #fff;
   border: 0;
   outline: 0;
 }
@@ -1152,6 +1162,12 @@ h6 {
   height: auto;
 }
 
+.testimonials__item {
+  height: 327px;
+  overflow: hidden;
+  background-color: #fff;
+}
+
 .testimonials__title {
   margin-bottom: 20px;
   font-family: "Roboto", sans-serif;
@@ -1232,6 +1248,11 @@ h6 {
   background-color: #f7f8fa;
 }
 
+.aritcle__heart {
+  width: 11px;
+  height: 10px;
+}
+
 .article__title {
   font-family: "Roboto", sans-serif;
   font-size: 18px;
@@ -1271,6 +1292,7 @@ h6 {
 .article__img {
   display: block;
   width: 100%;
+  max-width: 170px;
 }
 
 .article__link {
@@ -1376,6 +1398,7 @@ h6 {
 }
 
 .subscribe__social-img {
+  height: 22px;
   opacity: 0.2;
   transition: opacity 0.2s linear;
 }

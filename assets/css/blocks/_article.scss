@@ -9,6 +9,11 @@
 	background-color: #f7f8fa;
 }
 
+.aritcle__heart {
+	width: 11px;
+	height: 10px;
+}
+
 .article__title {
 	font-family: $font-Roboto;
 	font-size: 18px;
@@ -48,6 +53,7 @@
 .article__img {
 	display: block;
 	width: 100%;
+	max-width: 170px;
 }
 
 .article__link {
