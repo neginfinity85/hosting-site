@@ -42,6 +42,20 @@ $(function () {
 	});
 
 	/* Testimonials Slider https://kenwheeler.github.io/slick/?ref=blogduwebdesign.com */
+	let introSlider = $('#introSlider');
+
+	introSlider.slick({
+		infinite: true,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		fade: true,
+		arrows: false,
+		dots: true,
+		autoplay: true,
+		autoplaySpeed: 2000,
+	});
+
+	/* Testimonials Slider https://kenwheeler.github.io/slick/?ref=blogduwebdesign.com */
 	let slider = $('#testimonialsSlider');
 
 	slider.slick({
