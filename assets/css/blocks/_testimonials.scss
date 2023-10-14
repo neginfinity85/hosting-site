@@ -46,6 +46,8 @@
 	height: 327px;
 	overflow: hidden;
 
+	background: $color-primary;
+
 	& .slick-initialized {
 		height: auto;
 	}

@@ -48,7 +48,7 @@ $(function () {
 		infinite: true,
 		slidesToShow: 1,
 		slidesToScroll: 1,
-		fade: true,
+		fade: false,
 		arrows: false,
 		dots: true,
 		autoplay: true,
@@ -65,5 +65,7 @@ $(function () {
 		fade: true,
 		arrows: false,
 		dots: true,
+		autoplay: true,
+		autoplaySpeed: 2000,
 	});
 });
