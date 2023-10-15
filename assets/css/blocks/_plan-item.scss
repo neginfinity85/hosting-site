@@ -6,6 +6,36 @@
 
 	border: 1px solid rgba(#bebebe, 50%);
 }
+
+.plan-item--small {
+	max-width: 235px;
+}
+
+.plan-item--right {
+	@media #{$breakpoint-768} {
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+.plan-item--left {
+	margin-left: auto;
+
+	@media #{$breakpoint-576} {
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+.plan-item--middle {
+	max-width: 314px;
+
+	@media #{$breakpoint-576} {
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
 .plan-item__title {
 	margin-bottom: 5px;
 
@@ -72,8 +102,7 @@
 }
 
 .plan-item__header {
-	padding-top: 25px;
-	padding-bottom: 15px;
+	padding: 25px 10px 15px;
 }
 
 .plan-item__body {

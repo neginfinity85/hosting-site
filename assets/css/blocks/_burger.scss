@@ -1,0 +1,50 @@
+/* Burger
+======================= */
+.burger {
+	display: none;
+	padding: 9px 2px;
+
+	background: none;
+	border: 0;
+
+	cursor: pointer;
+
+	@media #{$breakpoint-992} {
+		display: block;
+	}
+}
+
+.burger-item {
+	display: block;
+	width: 30px;
+	height: 3px;
+
+	background-color: #fff;
+
+	font-size: 0;
+	color: transparent;
+	cursor: pointer;
+
+	position: relative;
+}
+
+.burger-item::before,
+.burger-item::after {
+	content: '';
+	height: 100%;
+	background-color: #fff;
+
+	position: absolute;
+	left: 0;
+	z-index: 1;
+}
+
+.burger-item::before {
+	width: 30px;
+	top: -8px;
+}
+
+.burger-item::after {
+	width: 26px;
+	bottom: -8px;
+}

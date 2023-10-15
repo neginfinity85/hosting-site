@@ -48,15 +48,12 @@
 
 	background: $color-primary;
 
-	& .slick-initialized {
+	&.slick-initialized {
 		height: auto;
 	}
 }
 
 .testimonials__item {
-	height: 327px;
-	overflow: hidden;
-
 	background-color: #fff;
 }
 

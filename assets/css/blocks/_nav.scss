@@ -6,6 +6,10 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
+
+	@media #{$breakpoint-992} {
+		display: none;
+	}
 }
 
 .nav__link {

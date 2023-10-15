@@ -72,6 +72,7 @@
 }
 
 .intro__slider-photo {
+	width: 100%;
 	height: 100%;
 	max-height: 583px;
 }
@@ -79,6 +80,10 @@
 .intro__inner {
 	position: relative;
 	z-index: 2;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .intro__title {
@@ -90,10 +95,14 @@
 	line-height: 1;
 	color: $color-primary;
 	text-align: center;
+
+	@media #{$breakpoint-400} {
+		font-size: 30px;
+	}
 }
 
 .intro__text {
-	margin: 0 auto 40px;
+	margin-bottom: 40px;
 	max-width: 480px;
 
 	font-family: $font-PTSans;
@@ -105,7 +114,7 @@
 }
 
 .intro__learn-more {
-	display: block;
+	display: inline-block;
 	margin-top: 25px;
 
 	font-family: $font-PTSans;

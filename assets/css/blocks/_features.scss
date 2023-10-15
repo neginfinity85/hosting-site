@@ -4,6 +4,10 @@
 	padding-top: 70px;
 
 	background-color: #2c3039;
+
+	@media #{$breakpoint-576} {
+		padding: 40px 0;
+	}
 }
 
 .features__title {
@@ -34,6 +38,8 @@
 	text-transform: uppercase;
 }
 .features__item-text {
+	margin-bottom: 30px;
+
 	font-family: $font-PTSans;
 	font-size: 14px;
 	font-weight: 400;

@@ -2,6 +2,7 @@
 ========================== */
 .form {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: center;
 	margin-bottom: 40px;
 }
@@ -14,6 +15,14 @@
 	justify-content: flex-end;
 
 	border-left: 1px solid rgba(#fff, 10%);
+
+	@media #{$breakpoint-768} {
+		justify-content: center;
+	}
+
+	@media #{$breakpoint-576} {
+		border-left: none;
+	}
 }
 
 .form__group {
@@ -28,6 +37,27 @@
 .form__group--subscribe {
 	height: 40px;
 	background: none;
+
+	@media #{$breakpoint-400} {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+	}
+}
+
+.form__text {
+	@include PTSans(12px, 400, 1.7, $color-primary);
+	text-transform: uppercase;
+
+	@media #{$breakpoint-768} {
+		font-size: 11px;
+		text-align: center;
+	}
+
+	@media #{$breakpoint-400} {
+		width: 100%;
+		margin-bottom: 15px;
+	}
 }
 
 .input {
@@ -42,6 +72,20 @@
 
 	border: 0;
 	outline: 0;
+
+	@media #{$breakpoint-768} {
+		width: 300px;
+	}
+
+	@media #{$breakpoint-576} {
+		width: 190px;
+	}
+
+	@media #{$breakpoint-400} {
+		width: 90px;
+
+		font-size: 14px;
+	}
 }
 
 .input--subscribe {
@@ -50,6 +94,14 @@
 
 	font-size: 14px;
 	color: $color-third;
+
+	@media #{$breakpoint-992} {
+		width: 240px;
+	}
+
+	@media #{$breakpoint-768} {
+		width: 140px;
+	}
 }
 
 .select {
@@ -64,4 +116,14 @@
 	background-color: #fff;
 	border: 0;
 	outline: 0;
+
+	@media #{$breakpoint-576} {
+		width: 65px;
+	}
+
+	@media #{$breakpoint-400} {
+		width: 60px;
+
+		font-size: 14px;
+	}
 }

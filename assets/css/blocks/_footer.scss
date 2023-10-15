@@ -1,3 +1,5 @@
+/* Footer
+==================================== */
 .footer {
 	width: 100%;
 	padding: 25px 0 20px;
@@ -8,6 +10,10 @@
 .footer__title {
 	@include PTSans(12px, 700, 2.5, #000);
 	text-transform: uppercase;
+
+	@media #{$breakpoint-576} {
+		text-align: center;
+	}
 }
 .footer__link {
 	display: block;
@@ -17,6 +23,10 @@
 
 	&:hover {
 		text-decoration: underline;
+	}
+
+	@media #{$breakpoint-576} {
+		text-align: center;
 	}
 }
 
@@ -30,6 +40,14 @@
 	&:hover {
 		text-decoration: underline;
 	}
+
+	@media #{$breakpoint-768} {
+		margin-top: 20px;
+	}
+
+	@media #{$breakpoint-576} {
+		text-align: center;
+	}
 }
 .footer__email {
 	display: inline-block;
@@ -41,7 +59,17 @@
 	&:hover {
 		text-decoration: underline;
 	}
+
+	@media #{$breakpoint-576} {
+		display: block;
+		text-align: center;
+	}
 }
+
 .footer__copyright {
 	@include PTSans(12px, 400, 1.7, $color-third);
+
+	@media #{$breakpoint-576} {
+		text-align: center;
+	}
 }

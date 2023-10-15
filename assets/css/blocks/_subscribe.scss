@@ -2,15 +2,38 @@
 	width: 100%;
 
 	background-color: $color-third;
+
+	@media #{$breakpoint-576} {
+		padding: 20px 0;
+	}
 }
 
 .subscribe__text {
 	@include PTSans(12px, 400, 1.7, $color-primary);
 	text-transform: uppercase;
+
+	@media #{$breakpoint-768} {
+		font-size: 11px;
+		text-align: center;
+	}
+}
+
+.subscribe__social {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+
+	@media #{$breakpoint-576} {
+		padding: 10px 0;
+		justify-content: center;
+	}
 }
 
 .subscribe__social-link {
-	margin-right: 28px;
+	width: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 
 	text-decoration: none;
 }

@@ -9,11 +9,21 @@
 	justify-content: start;
 
 	text-decoration: none;
+
+	@media #{$breakpoint-992} {
+		justify-content: center;
+	}
 }
 
 .logo__img {
 	display: block;
+	width: 100%;
+	max-width: 56px;
 	margin-right: 20px;
+
+	@media #{$breakpoint-400} {
+		display: none;
+	}
 }
 
 .logo__text {
@@ -25,5 +35,9 @@
 
 	span {
 		color: $color-secondary;
+	}
+
+	@media #{$breakpoint-576} {
+		font-size: 14px;
 	}
 }

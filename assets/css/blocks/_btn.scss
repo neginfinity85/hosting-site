@@ -43,7 +43,10 @@
 }
 
 .btn__domains {
-	padding: 18px 28px;
+	height: 50px;
+	width: 140px;
+	padding: 0;
+
 	font-size: 14px;
 	font-weight: 700;
 	text-transform: uppercase;
@@ -52,6 +55,16 @@
 
 	&:hover {
 		background-color: darken($color-secondary, 10%);
+	}
+
+	@media #{$breakpoint-576} {
+		width: 100px;
+	}
+
+	@media #{$breakpoint-400} {
+		width: 90px;
+
+		font-size: 12px;
 	}
 }
 
@@ -93,6 +106,10 @@
 
 	&:hover {
 		background-color: $color-secondary;
+	}
+
+	@media #{$breakpoint-400} {
+		width: 150px;
 	}
 }
 
