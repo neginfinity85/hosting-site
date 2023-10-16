@@ -1,10 +1,13 @@
 $(function () {
-	// Fixed Header
+	/* Fixed Header
+	================================================= */
 	let header = $('#header');
 	let intro = $('#intro');
 	let introH = intro.innerHeight();
 	let headerH = header.innerHeight();
 	let scrollPos = $(window).scrollTop();
+	let nav = $('#nav');
+	let navToggle = $('#navToggle');
 
 	checkScroll(scrollPos, introH, headerH);
 
@@ -24,14 +27,15 @@ $(function () {
 		}
 	}
 
-	// Smooth scroll
+	/* Smooth scroll
+	===================================================== */
 	$('[data-scroll]').on('click', function (event) {
 		event.preventDefault();
 
 		let elementId = $(this).data('scroll');
 		let elementOffset = $(elementId).offset().top;
-		// console.log(elementOffset);
-		//nav.removeClass('show');
+		nav.removeClass('show');
+		$('body').removeClass('no-scroll');
 
 		$('html, body').animate(
 			{
@@ -39,6 +43,21 @@ $(function () {
 			},
 			700,
 		);
+	});
+
+	/* Nav Toggle on mobile
+	================================================== */
+
+	navToggle.on('click', function (event) {
+		event.preventDefault();
+
+		nav.toggleClass('show');
+		$('body').toggleClass('no-scroll');
+	});
+
+	$(window).on('resize', function () {
+		nav.removeClass('show');
+		$('body').removeClass('no-scroll');
 	});
 
 	/* Testimonials Slider https://kenwheeler.github.io/slick/?ref=blogduwebdesign.com */
