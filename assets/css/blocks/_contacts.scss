@@ -5,6 +5,7 @@
 	z-index: 1;
 
 	& > iframe {
+		width: 100%;
 		opacity: 0.3;
 
 		transition: opacity 0.3s linear;

@@ -578,8 +578,9 @@ h6 {
   font-family: "PT Sans", sans-serif;
   font-size: 16px;
   font-weight: 700;
-  text-transform: uppercase;
+  line-height: 1;
   color: #fff;
+  text-transform: uppercase;
 }
 .logo__text span {
   color: #e84c3d;
@@ -637,6 +638,7 @@ h6 {
   font-family: "PT Sans", sans-serif;
   font-size: 12px;
   font-weight: 400;
+  line-height: 1;
   color: #fff;
   text-transform: uppercase;
   text-decoration: none;
@@ -919,6 +921,7 @@ h6 {
   font-family: "PT Sans", sans-serif;
   font-size: 12px;
   font-weight: 400;
+  line-height: 1;
   color: #fff;
   text-align: center;
   text-transform: uppercase;
@@ -995,6 +998,7 @@ h6 {
   font-family: "PT Sans", sans-serif;
   font-size: 12px;
   font-weight: 700;
+  line-height: 1;
   color: #e84c3d;
   text-align: center;
   text-transform: uppercase;
@@ -1619,6 +1623,7 @@ h6 {
   z-index: 1;
 }
 .contacts > iframe {
+  width: 100%;
   opacity: 0.3;
   transition: opacity 0.3s linear;
 }

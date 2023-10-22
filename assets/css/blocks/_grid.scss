@@ -71,7 +71,7 @@
 	@for $i from 1 to $columns + 1 {
 		.col-md-#{$i} {
 			width: math.div($i, $columns) * 100%;
-			padding-left: $gutterx;
+			padding-left: $gutter;
 			padding-right: $gutter;
 		}
 	}
