@@ -13,10 +13,6 @@
 	top: 0;
 	left: 0;
 	z-index: 100;
-
-	@media #{$breakpoint-992} {
-		background-color: rgba(#000, 90%);
-	}
 }
 
 .header--fixed {

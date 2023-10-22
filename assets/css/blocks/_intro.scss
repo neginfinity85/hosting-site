@@ -105,11 +105,7 @@
 	margin-bottom: 40px;
 	max-width: 480px;
 
-	font-family: $font-PTSans;
-	font-size: 16px;
-	font-weight: 400;
-	line-height: 1.5;
-	color: $color-primary;
+	@include PTSans(16px, 400, 1.5, $color-primary);
 	text-align: center;
 }
 
@@ -117,10 +113,7 @@
 	display: inline-block;
 	margin-top: 25px;
 
-	font-family: $font-PTSans;
-	font-size: 12px;
-	font-weight: 400;
-	color: $color-primary;
+	@include PTSans(12px, 400, 1, $color-primary);
 	text-align: center;
 	text-transform: uppercase;
 

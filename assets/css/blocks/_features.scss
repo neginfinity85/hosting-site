@@ -29,21 +29,13 @@
 .features__item-title {
 	margin-bottom: 5px;
 
-	font-family: $font-PTSans;
-	font-size: 16px;
-	font-weight: 700;
-	line-height: 1.25;
-	color: $color-primary;
+	@include PTSans(16px, 700, 1.25, $color-primary);
 	text-align: left;
 	text-transform: uppercase;
 }
 .features__item-text {
 	margin-bottom: 30px;
 
-	font-family: $font-PTSans;
-	font-size: 14px;
-	font-weight: 400;
-	line-height: 1.4;
-	color: #98a3a3;
+	@include PTSans(14px, 400, 1.4, #98a3a3);
 	text-align: left;
 }

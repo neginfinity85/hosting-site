@@ -27,11 +27,8 @@
 }
 
 .logo__text {
-	font-family: $font-PTSans;
-	font-size: 16px;
-	font-weight: 700;
+	@include PTSans(16px, 700, 1, $color-primary);
 	text-transform: uppercase;
-	color: $color-primary;
 
 	span {
 		color: $color-secondary;

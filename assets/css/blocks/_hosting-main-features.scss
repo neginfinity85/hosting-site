@@ -46,11 +46,7 @@
 .hosting-main-features__text {
 	margin-bottom: 30px;
 
-	font-family: $font-PTSans;
-	font-size: 16px;
-	font-weight: 400;
-	line-height: 1.25;
-	color: #6f798c;
+	@include PTSans(16px, 400, 1.25, #6f798c);
 	text-align: center;
 
 	@media #{$breakpoint-992} {
@@ -63,10 +59,7 @@
 }
 
 .hosting-main-features__read-more {
-	font-family: $font-PTSans;
-	font-size: 12px;
-	font-weight: 700;
-	color: $color-secondary;
+	@include PTSans(12px, 700, 1, $color-secondary);
 	text-align: center;
 	text-transform: uppercase;
 

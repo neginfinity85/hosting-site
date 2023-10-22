@@ -8,9 +8,7 @@
 	justify-content: space-around;
 
 	@media #{$breakpoint-992} {
-		// display: none;
-
-		width: 100%;
+		width: 0;
 		height: 100%;
 		padding-bottom: 100px;
 		min-height: calc(100vh - 100px);
@@ -33,6 +31,7 @@
 
 	&.show {
 		display: flex;
+		width: 100%;
 
 		transform: translateX(0);
 
@@ -50,10 +49,7 @@
 	display: block;
 	margin-right: 30px;
 
-	font-family: $font-PTSans;
-	font-size: 12px;
-	font-weight: 400;
-	color: $color-primary;
+	@include PTSans(12px, 400, 1, $color-primary);
 	text-transform: uppercase;
 	text-decoration: none;
 

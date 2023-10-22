@@ -1,11 +1,7 @@
 /* Buttons
 ============================== */
 .btn {
-	font-family: $font-PTSans;
-	font-size: 12px;
-	font-weight: 400;
-	line-height: 1;
-	color: $color-primary;
+	@include PTSans(12px, 400, 1, $color-primary);
 	text-transform: uppercase;
 
 	cursor: pointer;
@@ -15,7 +11,7 @@
 	transition: color 0.2s linear, background 0.2s linear;
 }
 
-.btn__login {
+.btn--login {
 	padding: 15px 30px;
 	border: 1px solid $color-secondary;
 
@@ -25,14 +21,13 @@
 	}
 }
 
-.btn__intro {
+.btn--intro {
 	display: block;
 	margin: 0 auto;
 	padding: 18px 69px;
 
 	font-size: 14px;
 	font-weight: 700;
-	text-transform: uppercase;
 
 	background-color: $color-secondary;
 
@@ -42,14 +37,13 @@
 	}
 }
 
-.btn__domains {
+.btn--domains {
 	height: 50px;
 	width: 140px;
 	padding: 0;
 
 	font-size: 14px;
 	font-weight: 700;
-	text-transform: uppercase;
 
 	background-color: $color-secondary;
 
@@ -120,7 +114,6 @@
 
 	font-size: 12px;
 	font-weight: 700;
-	text-transform: uppercase;
 
 	background-color: $color-secondary;
 
